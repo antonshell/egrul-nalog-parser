@@ -1,0 +1,12 @@
+{
+    "name": "antonshell/egrul-nalog-parser",
+    "description": "Pdf parser for https://egrul.nalog.ru/",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Anton Shelyganov",
+            "email": "antonshell@yandex.ru"
+        }
+    ],
+    "require": {}
+}
