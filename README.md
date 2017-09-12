@@ -4,7 +4,7 @@ Pdf parser for https://egrul.nalog.ru/
 # Instalation
 
 ```
-composer require "antonshell/egrul-nalog-parser:0.0.3"
+composer require "antonshell/egrul-nalog-parser:dev-master"
 ```
 
 # Examples
