@@ -10,8 +10,6 @@
     ],
     "require": {},
     "autoload": {
-        "autoload": {
-            "classmap": ["src/"]
-        }
+        "classmap": ["src/"]
     }
 }
