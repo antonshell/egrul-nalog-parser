@@ -10,6 +10,8 @@
     ],
     "require": {},
     "autoload": {
-        "classmap": ["src/"]
+        "psr-0": {
+            "antonshell\\EgrulNalogParser\\": "src/"
+        }
     }
 }
