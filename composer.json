@@ -8,7 +8,10 @@
             "email": "antonshell@yandex.ru"
         }
     ],
-    "require": {},
+    "require": {
+        "php": ">=5.4.0",
+        "smalot/pdfparser": "^0.10.0"
+    },
     "autoload": {
         "psr-0": {
             "antonshell\\EgrulNalogParser\\": "src/"
