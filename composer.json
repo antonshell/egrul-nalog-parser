@@ -8,5 +8,10 @@
             "email": "antonshell@yandex.ru"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "antonshell\\EgrulNalogParser\\": "src/"
+        }
+    }
 }
