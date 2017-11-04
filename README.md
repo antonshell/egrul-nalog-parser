@@ -51,7 +51,7 @@ $pathPe = __DIR__ . '/nalog_pe.pdf';
 $results = $parser->parseNalogPe($pathPe);
 ```
 
-Parse PDF for Individual Entrepreneur
+Parse PDF for Organization
 
 ```php
 <?php
