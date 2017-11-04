@@ -16,7 +16,7 @@ composer require "antonshell/egrul-nalog-parser:dev-master"
 
 # Demo
 
-See[**demo**][1] for more details
+See [**demo**][1] for more details
 
 <p align="center">
     <a href="http://www.yiiframework.com/" target="_blank">
