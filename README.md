@@ -33,9 +33,9 @@ Parse PDF, auto detect type
 
 $parser = new \antonshell\EgrulNalogParser\Parser();
 
-// parse for Individual Entrepreneur
+// parse, auto detect type
 $path = __DIR__ . '/nalog_pe.pdf';
-$results = $parser->parseDocument($pathPe);
+$results = $parser->parseDocument($path);
 ```
 
 
