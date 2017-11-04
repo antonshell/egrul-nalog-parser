@@ -147,6 +147,13 @@ abstract class EgrulNalogBaseParser extends BaseParser
     }
 
     /**
+     * @return mixed
+     */
+    public function getDocumentCheckerKeyWord(){
+        return $this->documentCheckerKeyWord;
+    }
+
+    /**
      * check if input document has correct format( pe / org / other )
      * check by keyword
      *

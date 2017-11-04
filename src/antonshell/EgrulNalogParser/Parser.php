@@ -12,6 +12,9 @@ use antonshell\EgrulNalogParser\parsers\ParserInterface;
  */
 class Parser{
 
+    const DOC_TYPE_ORG = 1;
+    const DOC_TYPE_PE = 2;
+
     /**
      * @param $path
      * @return array
@@ -32,12 +35,19 @@ class Parser{
 
     /**
      * @param $path
-     * @param ParserInterface $parser
-     * @return mixed
+     * @param ParserInterface|null $parser
+     * @return array
      */
-    public function parseDocument($path, ParserInterface $parser){
+    public function parseDocument($path, ParserInterface $parser = null){
+        $text = $this->getPlainText($path);
+
+        if(!$parser){
+            $parser = $this->getDocumentParser($text);
+        }
+
         $text = $this->getPlainText($path);
         $data = $parser->parseDocument($text);
+
         return $data;
     }
 
@@ -49,5 +59,31 @@ class Parser{
         $parser = new \Smalot\PdfParser\Parser();
         $pdf    = $parser->parseFile($path);
         return $pdf->getText();
+    }
+
+    /**
+     * @param $text
+     * @return EgrulNalogOrgParser|EgrulNalogPeParser|null
+     * @throws \Exception
+     */
+    private function getDocumentParser($text){
+        $parser = null;
+
+        $orgParser = new EgrulNalogOrgParser();
+        $peParser = new EgrulNalogPeParser();
+
+        if(mb_strpos($text, $orgParser->getDocumentCheckerKeyWord()) !== false){
+            $parser = $orgParser;
+        }
+
+        if(mb_strpos($text, $peParser->getDocumentCheckerKeyWord()) !== false){
+            $parser = $peParser;
+        }
+
+        if(!$parser){
+            throw new \Exception('Can\'t get document type');
+        }
+
+        return $parser;
     }
 }
