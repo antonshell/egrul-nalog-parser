@@ -1,5 +1,12 @@
 # egrul-nalog-parser
-Pdf parser for https://egrul.nalog.ru/
+Pdf parser for 
+https://egrul.nalog.ru/
+
+<p align="center">
+    <a href="http://www.yiiframework.com/" target="_blank">
+        <img src="http://demo.antonshell.me/images/egrul-nalog-parser.png" alt="egrul-nalog-parser" />
+    </a>
+</p>
 
 # Instalation
 
@@ -7,7 +14,30 @@ Pdf parser for https://egrul.nalog.ru/
 composer require "antonshell/egrul-nalog-parser:dev-master"
 ```
 
+# Demo
+
+See[**demo**][1] for more details
+
+<p align="center">
+    <a href="http://www.yiiframework.com/" target="_blank">
+        <img src="http://demo.antonshell.me/images/egrul-nalog-parser-demo.jpg" alt="egrul-nalog-parser" />
+    </a>
+</p>
+
 # Examples
+
+Parse PDF, auto detect type
+
+```php
+<?php
+
+$parser = new \antonshell\EgrulNalogParser\Parser();
+
+// parse for Individual Entrepreneur
+$path = __DIR__ . '/nalog_pe.pdf';
+$results = $parser->parseDocument($pathPe);
+```
+
 
 Parse PDF for Individual Entrepreneur
 
@@ -32,3 +62,5 @@ $parser = new \antonshell\EgrulNalogParser\Parser();
 $pathOrg = __DIR__ . '/nalog_org.pdf';
 $parser->parseNalogOrg($pathOrg);
 ```
+
+[1]: http://demo.antonshell.me/egrul-nalog-parser/
