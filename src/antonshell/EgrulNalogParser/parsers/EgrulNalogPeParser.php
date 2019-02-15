@@ -21,7 +21,7 @@ class EgrulNalogPeParser extends EgrulNalogBaseParser implements ParserInterface
         $this->namespaces = require(__DIR__ . '/../data/nalog_namespaces_pe.php');
 
         $this->subSpace2keyWord = 'Наименование документа';
-        $this->documentCheckerKeyWord = 'сведения об индивидуальном предпринимателе';
+        $this->documentCheckerKeyWord = 'ведения об индивидуальном предпринимателе';
         $this->subSpace2groupName = 'documents';
     }
 
