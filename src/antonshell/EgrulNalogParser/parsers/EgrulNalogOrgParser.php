@@ -21,7 +21,7 @@ class EgrulNalogOrgParser extends EgrulNalogBaseParser implements ParserInterfac
         $this->namespaces = require(__DIR__ . '/../data/nalog_namespaces_org.php');
 
         $this->subSpace2keyWord = 'Наименование документа';
-        $this->documentCheckerKeyWord = 'сведения о юридическом лице';
+        $this->documentCheckerKeyWord = 'ведения о юридическом лице';
         $this->subSpace2groupName = 'documents';
     }
 
