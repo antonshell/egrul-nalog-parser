@@ -62,8 +62,7 @@ return [
     ),
     new DocumentNamespace(
         'main_activity',
-        'Сведения об основном виде деятельности',
-        true
+        'Сведения об основном виде деятельности'
     ),
     new DocumentNamespace(
         'extra_activity',

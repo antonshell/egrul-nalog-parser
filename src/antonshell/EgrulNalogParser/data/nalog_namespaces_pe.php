@@ -34,8 +34,7 @@ return [
     ),
     new DocumentNamespace(
         'extra_activity',
-        'Сведения о дополнительных видах деятельности',
-        true
+        'Сведения о дополнительных видах деятельности'
     ),
     new DocumentNamespace(
         'egrip',
