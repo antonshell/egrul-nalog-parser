@@ -176,10 +176,10 @@ abstract class EgrulNalogBaseParser extends BaseParser
     protected function clearLine($line){
         $line = str_replace('\f','',$line);
 
-        $pos = mb_strpos($line,'');
+        /*$pos = mb_strpos($line,'');
         if($pos !== false){
             $line = mb_substr($line,0,$pos);
-        }
+        }*/
 
         return $line;
     }
