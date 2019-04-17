@@ -75,4 +75,24 @@ return [
         true,
         true
     ),
+    new DocumentNamespace(
+        'extra_activity',
+        'Сведения о держателе реестра акционеров акционерного общества',
+        false
+    ),
+    new DocumentNamespace(
+        'representative_offices',
+        'Представительства',
+        true
+    ),
+    new DocumentNamespace(
+        'license_info',
+        'Сведения о лицензиях',
+        true
+    ),
+    new DocumentNamespace(
+        'branch_offices',
+        'Филиалы',
+        true
+    ),
 ];
