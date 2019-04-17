@@ -62,8 +62,7 @@ return [
     ),
     new DocumentNamespace(
         'main_activity',
-        'Сведения об основном виде деятельности',
-        true
+        'Сведения об основном виде деятельности'
     ),
     new DocumentNamespace(
         'extra_activity',
@@ -74,6 +73,26 @@ return [
         'egrul',
         'Сведения о записях, внесенных в Единый государственный реестр юридических лиц',
         true,
+        true
+    ),
+    new DocumentNamespace(
+        'extra_activity',
+        'Сведения о держателе реестра акционеров акционерного общества',
+        false
+    ),
+    new DocumentNamespace(
+        'representative_offices',
+        'Представительства',
+        true
+    ),
+    new DocumentNamespace(
+        'license_info',
+        'Сведения о лицензиях',
+        true
+    ),
+    new DocumentNamespace(
+        'branch_offices',
+        'Филиалы',
         true
     ),
 ];
