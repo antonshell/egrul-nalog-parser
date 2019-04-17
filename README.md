@@ -3,7 +3,7 @@ Pdf parser for
 https://egrul.nalog.ru/
 
 <p align="center">
-    <a href="http://www.yiiframework.com/" target="_blank">
+    <a href="http://demo.antonshell.me/egrul-nalog-parser/" target="_blank">
         <img src="http://demo.antonshell.me/images/egrul-nalog-parser.png" alt="egrul-nalog-parser" />
     </a>
 </p>
@@ -19,7 +19,7 @@ composer require "antonshell/egrul-nalog-parser:dev-master"
 See [**demo**][1] for more details
 
 <p align="center">
-    <a href="http://www.yiiframework.com/" target="_blank">
+    <a href="http://demo.antonshell.me/egrul-nalog-parser/" target="_blank">
         <img src="http://demo.antonshell.me/images/egrul-nalog-parser-demo.jpg" alt="egrul-nalog-parser" />
     </a>
 </p>
