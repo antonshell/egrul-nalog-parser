@@ -161,7 +161,7 @@ abstract class EgrulNalogBaseParser extends BaseParser
      * @throws \Exception
      */
     protected function checkDocumentType($text){
-        $text = strtolower($text);
+        $text = mb_strtolower($text);
         if(mb_strpos($text, $this->documentCheckerKeyWord) === false){
             throw new \Exception('Wrong document type');
         }

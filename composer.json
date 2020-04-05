@@ -10,7 +10,8 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "smalot/pdfparser": "^0.11.0"
+        "smalot/pdfparser": "^0.11.0",
+        "ext-mbstring": "*"
     },
     "autoload": {
         "psr-0": {
