@@ -9,8 +9,6 @@ namespace antonshell\EgrulNalogParser\parsers;
 class EgrulNalogOrgParser extends EgrulNalogBaseParser implements ParserInterface
 {
 
-    const TYPE = 'pe';
-
     /**
      * EgrulNalogPeParser constructor.
      */
@@ -23,6 +21,9 @@ class EgrulNalogOrgParser extends EgrulNalogBaseParser implements ParserInterfac
         $this->subSpace2keyWord = 'Наименование документа';
         $this->documentCheckerKeyWord = 'ведения о юридическом лице';
         $this->subSpace2groupName = 'documents';
+
+        $this->type = 'ОРГ';
+
     }
 
     /**
